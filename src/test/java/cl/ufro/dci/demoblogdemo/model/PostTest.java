@@ -36,7 +36,7 @@ class PostTest {
         //dado comentario y un post
         //cuando se agregar un comentario al post
         //entonces obtener una respuesta afirmativa
-
+        //prueba mala
         assertEquals(textos.get("msjCorrecto"), null);
     }
 
