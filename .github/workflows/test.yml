@@ -1,6 +1,9 @@
 name: Test
 
-on: push
+on:
+  push:
+    branches: 
+      - ramaPrueba
 
 jobs:
   run_tests:
@@ -20,6 +23,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Run tests with Maven
         run: mvn -B test --file pom.xml
-      - name: Condicion
-        run: echo Hello, world!
+      - name: Merge Master
+        run: git merge master
         
