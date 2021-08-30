@@ -3,7 +3,7 @@ name: Test
 on:
   push:
     branches: 
-      - ramaPrueba
+      - master
 
 jobs:
   run_tests:
@@ -24,5 +24,5 @@ jobs:
       - name: Run tests with Maven
         run: mvn -B test --file pom.xml
       - name: Merge Master
-        run: git merge master
+        run: echo Hola mundo
         
