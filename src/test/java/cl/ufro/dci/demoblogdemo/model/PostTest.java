@@ -37,7 +37,7 @@ class PostTest {
         //cuando se agregar un comentario al post
         //entonces obtener una respuesta afirmativa
 
-        assertEquals(textos.get("msjCorrecto"), p1.agregarComentario(c1));
+        assertEquals(textos.get("msjCorrecto"), null);
     }
 
     @Test
